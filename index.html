@@ -5,111 +5,279 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Poppins:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <title>Delina</title>
-    <link rel="stylesheet" href="style.css" />
+   <script src="https://kit.fontawesome.com/a209109b66.js" crossorigin="anonymous"></script>
+    
+    <meta
+      name="description"
+      content="A front-end developer passionate about creating interactive application and experiences on the web."
+    />
+    <title>Delina Carnaffin | Portfolio | Front-End Developer</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Delina Carnaffin</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html#contact">Contact me</a>
-            </li>
-          </ul>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="index.html">
+          <img
+            src="images/logo2.png"
+            class="logo d-none d-md-block"
+            alt="delina.logo"
+          />
+          <img
+            src="images/logo-sm.png"
+            class="logo d-block d-md-none"
+            alt="delina.logo"
+          />
+        </a>
+        <ul>
+          <li class="active">
+            <a href="/" title="Homepage">Home</a>
+          </li>
+          <li>
+            <a href="/about.html" title="About Delina">About</a>
+          </li>
+          <li>
+            <a href="/projects.html" title="Delina's Projects">Projects</a>
+          </li>
+          <li>
+            <a href="/contact.html" title="Contact Delina">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <p>Hi there I'm</p>
+      <h1>Delina Carnaffin</h1>
+      <h2 class="mb-5">Front-End Developer based in London</h2>
+      <div>
+        <a href="" class="btn btn-branding" download
+          >Resume</a>
+        
+      </div>
+    </div>
+    <div class="toolbox d-none d-md-block">
+      <p class="mt-5">Check out my Skills & Tools</p>
+      <div class="row">
+        <div class="col-2">
+          <img src="images/html.png" class="toolbox-icons" alt="HTML Logo" />
+          <p>HTML</p>
+        </div>
+        <div class="col-2">
+          <img src="images/css.png" class="toolbox-icons" alt="CSS Logo" />
+          <p>CSS</p>
+        </div>
+        <div class="col-2">
+          <img
+            src="images/Javascript.png"
+            class="toolbox-icons"
+            alt="Javascript Logo"
+          />
+          <p>JAVASCRIPT</p>
+        </div>
+        <div class="col-2">
+          <img
+            src="images/bootstrap.png"
+            class="toolbox-icons"
+            alt="Bootstrap Logo"
+          />
+          <p>BOOTSTRAP</p>
+        </div>
+        <div class="col-2">
+          <img
+            src="images/netlify.png"
+            class="toolbox-icons"
+            alt="Netlify Logo"
+          />
+          <p>NETLIFY</p>
+        </div>
+        <div class="col-2">
+          <img
+            src="images/visualstudiocode.png"
+            class="toolbox-icons"
+            alt="VIsual Studio Code Logo"
+          />
+          <p>VISUAL STUDIO CODE</p>
         </div>
       </div>
-    </nav>
-    <h2 class="text-center">👋 Hi I am</h2>
-    <h1 class="text-center">Delina Carnaffin</h1>
-    <h3 class="text-center">🇬🇧Front-end developer, based in the UK</h3>
-    <div class="navigation-links mb-5">
-      <a href="about.html#contact" class="primary-link">Contact me</a>
-      <a href="about.html" class="secondary-link">About me</a>
+    </div>
+    <div class="toolbox d-none d-md-block" class="justify-content-center">
+      <div class="row">
+        <div class="col-2">
+          <img
+            src="images/github.png"
+            class="toolbox-icons"
+            alt="GitHub Logo"
+          />
+          <p>GITHUB</p>
+        </div>
+        <div class="col-2">
+          <img
+            src="images/responsive.png"
+            class="toolbox-icons"
+            alt="Responsive Logo"
+          />
+          <p>RESPONSIVE</p>
+        </div>
+        <div class="col-2">
+          <img
+            src="images/flexbox.png"
+            class="toolbox-icons"
+            alt="Flexbox Logo"
+          />
+          <p>FLEXBOX</p>
+        </div>
+        <div class="col-2">
+          <img src="images/api.png" class="toolbox-icons" alt="API Logo" />
+          <p>API</p>
+        </div>
+        <div class="col-2">
+          <img src="images/seo.png" class="toolbox-icons" alt="SEO Logo" />
+          <p>SEO</p>
+        </div>
+        <div class="col-2">
+          <img src="images/react.png" class="toolbox-icons" alt="Figma Logo" />
+          <p>React</p>
+        </div>
+      </div>
     </div>
 
+    <p class="text-center mt-5 mb-3">Some of my latest projects</p>
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="images/yoga.png" class="img-fluid rounded" />
+      <div class="row mb-5">
+        <div class="col d-none d-md-block">
+          <img
+            src="images/weather-project.png"
+            class="img-fluid rounded mt-5"
+            alt="Weather Project"
+          />
         </div>
-        <div class="col-md-6">
-          <h2 class="mb-3">Yoga app</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
-          </p>
-          <div class="mt-5">
-            <a href="#" class="primary-link">Launch Yoga App</a>
+        <div class="col">
+          <div class="project-description">
+            <h2 class="mb-5">Weather Project</h2>
+            <p class="mb-5 text-muted">
+              It allows users to search for weather conditions in a specific city or retrieve weather information based on their current location. The website displays the city name, current temperature, weather description, humidity, wind speed, and date/time. It also provides a weather forecast for the upcoming days. The design includes a responsive layout with a gradient background and card elements.
+
+            </p>
+            
+            <a
+              href="/projects.html"
+              class="btn btn-branding-outline"
+              title="Projects Page"
+              >Learn More</a
+            >
           </div>
         </div>
       </div>
-      <div class="row mt-5">
-        <div class="col-md-6">
-          <h2 class="mb-3">Weather app</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
-          </p>
-          <div class="mb-5 mt-5">
-            <a href="#" class="primary-link">Launch Weather App</a>
+      <div class="row mb-5">
+        <div class="col">
+          <div class="project-description">
+            <h2 class="mb-5">World Clock Project</h2>
+            <p class="mb-5 text-muted">
+              This website is a World Clock application that allows users to view the current time and date in different cities around the world. Users can select a city from the provided options or choose their current location. The website dynamically updates the displayed time and date for the selected city, and the time is continuously refreshed. The design features a world map background and a container with city options and their corresponding time and date information.
+            </p>
+            <a
+              href=""
+              class="btn btn-branding-outline"
+              title="Projects Page"
+              >Learn More</a
+            >
           </div>
         </div>
-        <div class="col-md-6">
-          <img src="images/weather.png" class="img-fluid rounded" />
+        <div class="col d-none d-md-block">
+          <img
+            src="images/world-clock-project.png"
+            class="img-fluid rounded mt-5"
+            alt="world Clock Project"
+          />
         </div>
       </div>
-      <div class="row mt-5">
-        <div class="col-md-6">
-          <img src="images/yogurt.png" class="img-fluid rounded" />
+      <div class="row mb-5">
+        <div class="col d-none d-md-block">
+          <img
+            src="images/hobby-project1.png"
+            class="img-fluid rounded mt-5"
+            alt="hobby Project"
+          />
         </div>
-        <div class="col-md-6">
-          <h2 class="mb-3">Yogurt app</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
-          </p>
-          <div class="mt-5">
-            <a href="#" class="primary-link">Launch Yogurt App</a>
+        <div class="col">
+          <div class="project-description">
+            <h2 class="mb-5">Hobby Project</h2>
+            <p class="mb-5 text-muted">
+              This website is a hobby project that focuses on UX Design. It provides information about UX design, its process, and its goal of creating meaningful user experiences. The website offers a free UX course to the first 50 sign-ups and includes a button to apply. It dynamically updates the heading based on the user's age. The website aims to educate visitors about UX design and encourage them to enroll in the course.
+            </p>
+            <a
+              href="/projects.html"
+              class="btn btn-branding-outline"
+              title="Project Page"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+      
           </div>
         </div>
       </div>
     </div>
+    <footer>
+      <div
+        class="contact-box justify-content-between mt-5 mb-5 d-none d-lg-block"
+      >
+        <div class="row">
+          <div class="col">
+            <h3 class="contact-description">Work Inquiry</h3>
+            <p class="text-muted">Let's Connect</p>
+          </div>
+          <div class="col">
+            <a
+              href="contact.html"
+              class="btn btn-branding-contact mt-4"
+              title="Contact Tracey"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-2 mt-3">
+        <a href="mailto:delinacarnaffin@gmail.com" title="Email Delina"
+          >delinacarnaffin@gmail.com</a
+        >
+      </div>
+      <div class="social-links d-flex justify-content-center">
+    
+<a href="https://github.com/">
+        <i class="fa-brands fa-github contact-icons social-icons"  ></i></a>
+       
+        <a href="https://www.linkedin.com/feed/?trk=404_page">
+          <i class="fa-brands fa-linkedin contact-icons" > </a></i>
+          
+      </div>
+      <p class="text-center mt-3">
+        This project was coded by Delina, and it is
+        <a
+          href="https://github.com/tleanne1/my-developer-portfolio"
+          target="_blank"
+          title="GitHub Portfolio Project"
+          >open-sourced.</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
