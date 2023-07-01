@@ -1,17 +1,32 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --branding-color: rgb(255, 181, 181);
+  --secondary-color: linear-gradient(
+    109.6deg,
+    rgb(255, 221, 225) 11.2%,
+    rgb(255, 255, 255) 92.2%
+  );
+  --heading-font-family: "Antonio", sans-serif;
+  --default-font-family: "Poppins", sans-serif;
 }
 
 body {
-  margin: 100px 0;
+  font-family: var(--default-font-family);
 }
 
 h1,
 h2,
-h3 {
-  margin: 0;
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+}
+
+p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 h1 {
@@ -19,96 +34,221 @@ h1 {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 56px;
 }
 
 h3 {
-  font-size: 24px;
-  opacity: 0.7;
+  font-size: 48px;
 }
 
-p {
-  font-size: 18px;
-  line-height: 1.5;
+nav {
+  padding: 10px 0;
 }
 
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
+nav ul {
+  margin: 0px;
+  padding: 0px;
 }
 
-.navigation-links a {
-  margin: 20px;
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
 }
 
-.primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
+nav a {
   text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
+  color: #222831;
+  transition: all 100 ease-in-out;
 }
 
-.primary-link:hover {
-  color: white;
+nav li.active a,
+nav a:hover {
+  color: var(--branding-color);
 }
 
-.secondary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
+footer a {
   text-decoration: none;
-  text-transform: capitalize;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  color: #222831;
 }
 
-.homepage-link {
-  color: var(--primary-color);
+img:hover {
+  transform: scale(1.2);
+  transition: all 150 ease-in-out;
+}
+
+.hero {
+  background: var(--secondary-color);
   text-align: center;
-  display: block;
+  padding: 80px 20px;
 }
 
-.about-paragraphs {
-  margin: 30px 0;
+.hero p {
+  font-size: 36px;
+  margin: 0;
+  color: #222831;
 }
 
-.about-paragraphs p {
+.hero h2 {
+  font-family: var(--default-font-family);
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 24px;
+  color: #222831;
+}
+
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: #222831;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.project-description {
+  padding: 0px 60px;
+}
+
+.contact-box {
+  background: var(--secondary-color);
+  justify-content: space-between;
+  margin: 100px;
+  padding: 40px 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.btn-branding-contact {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: #222831;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.social-icons {
+  width: 80px;
+  padding: 20px;
+}
+
+.toolbox {
+  text-align: center;
+}
+
+.toolbox-icons {
+  width: 100px;
+}
+
+.content-container {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.content h1 {
+  font-size: 64px;
+  line-height: 65px;
+}
+
+.content h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+  font-weight: 300px;
+}
+
+.content {
+  margin: 0px 100px;
+}
+
+.btn-branding-projects {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: #222831;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 10px 20px;
+}
+
+.technologies {
+  color: var(--branding-color);
+}
+
+.contact-icons {
+  width: 100px;
+  
+  padding: 20px;
+  color: #ffb5b5;
+}
+
+.logo {
+  max-height: 40px;
+}
+
+.nav-container {
   margin: 10px;
 }
 
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
+.contact-content {
+  font-size: 20px;
 }
 
-.email-link:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 576px) {
+@media (max-width: 900px) {
   h1 {
-    font-size: 48px;
+    font-size: 42px;
     line-height: 1.5;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 42px;
+  }
+
+  .project-description {
+    padding: 0;
     text-align: center;
   }
 
-  p {
-    text-align: center;
+  .content-container {
+    padding: 0;
   }
 
-  .project-link {
-    display: block;
-    text-align: center;
-    margin: 0 20px;
+  .btn-branding-projects {
+    background: none;
+    text-decoration: underline;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px 20px;
+  }
+
+  nav li {
+    margin-left: 8px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .content h1 {
+    font-size: 42px;
+  }
+
+  .content p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .content h1.project-h {
+    font-size: 26px;
+    line-height: 30px;
   }
 }
