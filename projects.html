@@ -4,26 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Poppins:wght@100;300;400&display=swap"
       rel="stylesheet"
     />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
 
+    <!-- Bootstrap JavaScript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-   <script src="https://kit.fontawesome.com/a209109b66.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a209109b66.js" crossorigin="anonymous"></script>
     
     <meta
       name="description"
@@ -32,18 +37,19 @@
     <title>Delina Carnaffin | Portfolio | Front-End Developer</title>
   </head>
   <body>
-   <div class="container">
+    <div class="container">
+      <!-- Navigation -->
       <nav class="d-flex justify-content-between">
         <a href="index.html">
           <img
-            src="images/logo2.png"
+            src="images/delina-logo.png"
             class="logo d-none d-md-block"
-            alt="Delina Logo"
+            alt="delina.logo"
           />
           <img
-            src="images/logo-sm.png"
+            src="images/delina-logo.png"
             class="logo d-block d-md-none"
-            alt="Delina Logo"
+            alt="delina.logo"
           />
         </a>
         <ul>
@@ -64,189 +70,135 @@
     </div>
     <div class="content-container">
       <div class="content">
-        <h1 class="project-h" class="mb-5">
+        <h1 class="project-h mb-5">
           Take a look at what I've been working on!
         </h1>
-        <div class="row mb-5">
-          <div class="col-md-6">
-            <img
-              src="images/weather-project.png"
-              class="img-fluid rounded mt-5 mb-4"
-              alt="Weather Project"
-            />
-            <h2>Weather Project</h2>
-            <p class="text-muted">
-              
-              <span class="description"> description </span>
-            </p>
-            <a
-              href="https://fluffy-jelly-8cc18e.netlify.app/"
-              target="_blank"
-              class="btn btn-branding-projects"
-              title="Netlify Project Page"
-              >View Live</a>
-            <a
-              href="https://github.com/nina88c/weather-website"
-              target="_blank"
-              class="btn btn-branding-projects"
-              title="GitHub Profile"
-              >Github</a
-            >
-          </div>
-          <div class="col-md-6">
-            <img
-              src="images/world-clock-project.png"
-              class="img-fluid rounded mt-5 mb-4"
-              alt="World Clock Project"
-              height="100"
-            />
-            <h2>World Clock Project</h2>
-            <p class="text-muted">
-              <span class="description"
-                > description</span
-              >
-            </p>
-            <a
-              href="https://resilient-kringle-6acead.netlify.app/"
-              target="_blank"
-              class="btn btn-branding-projects"
-              title="Netlify Project Page"
-              >View Live</a
-            >
-            <a
-              href="https://github.com/nina88c/World-Clock"
-              target="_blank"
-              class="btn btn-branding-projects"
-              title="GitHub Profile"
-              >Github</a
-            >
-          </div>
-        </div>
-        <div class="row mb-5">
-          <div class="col-md-6">
-            <img
-              src="images/hobby-project1.png"
-              class="img-fluid rounded mb-4"
-              alt="Hobby Project"
-            />
-            <h2>Weather Project</h2>
-            <p class="text-muted">
-              <span class="description"
-                >description</span
-              >
-            </p>
-            <a
-              href=""
-              target="_blank"
-              class="btn btn-branding-projects"
-              title="Netlify Project Page"
-              >View Live</a
-            >
-            <a
-              href=""
-              target="_blank"
-              class="btn btn-branding-projects"
-              title="Github Profile"
-              >Github</a
-            >
-          </div>
-          <div class="col-md-6">
-            <img
-              src="images/hobby-project2.png"
-              class="img-fluid rounded mb-4"
-              alt="Hobby Project"
-            />
-            <h2>Hobby Project</h2>
-            <p class="text-muted">
-       
-              <span class="description"
-                > description
-               </span
-              >
-            </p>
-            <a
-              href=""
-              target="_blank"
-              class="btn btn-branding-projects"
-              title="Netlify Project Page"
-              >View Live</a
-            >
-            <a
-              href=""
-              target="_blank"
-              class="btn btn-branding-projects"
-              title="GitHub Profile"
-              >Github</a
-            >
-          </div>
-        </div>
-        <div class="row mb-5">
-          <div class="col-md-6">
-            <img
-              src=""
-              class="img-fluid rounded mt-5 mb-4"
-              alt="Dictionary Project "
-            />
-            <h2>Dictionary Project</h2>
-            <p class="text-muted">
+
+        <!-- Weather Project -->
+        <img
+          src="images/weather-project.png"
+          class="img-fluid rounded mt-5 mb-4"
+          alt="Weather Project"
+        />
+        <h2>Weather Project</h2>
+        <p class="text-muted">
+          <span class="description">
+            It allows users to search for weather conditions in a specific city or retrieve weather information based on their current location. The website displays the city name, current temperature, weather description, humidity, wind speed, and date/time. It also provides a weather forecast for the upcoming days. The design includes a responsive layout with a gradient background and card elements.
+          </span>
+        </p>
+        <a
+          href="https://fluffy-jelly-8cc18e.netlify.app/"
+          target="_blank"
+          class="btn btn-branding-projects"
+          title="Netlify Project Page"
+          id="weather.info"
+          >View Live</a
+        >
+        <a
+          href="https://github.com/nina88c/weather-website"
+          target="_blank"
+          class="btn btn-branding-projects"
+          title="GitHub Profile"
+          >Github</a
+        >
+
+        <!-- World Clock Project -->
+        <img
+          src="images/world-clock-project.png"
+          class="img-fluid rounded mt-5 mb-4"
+          id="world-clock.info"
+          alt="World Clock Project"
+        />
+        <h2>World Clock Project</h2>
+        <p class="text-muted">
+          <span class="description">
+            This website is a World Clock application that allows users to view the current time and date in different cities around the world. Users can select a city from the provided options or choose their current location. The website dynamically updates the displayed time and date for the selected city, and the time is continuously refreshed. The design features a world map background and a container with city options and their corresponding time and date information.
+          </span>
+        </p>
+        <a
+          href="https://resilient-kringle-6acead.netlify.app/"
+          target="_blank"
+          class="btn btn-branding-projects"
+          title="Netlify Project Page"
+          
+          >View Live</a
+        >
+        <a
+          href="https://github.com/nina88c/World-Clock"
+          target="_blank"
+          class="btn btn-branding-projects"
+          title="GitHub Profile"
+          >Github</a
+        >
+
+        <!-- Hobby Project -->
+        <img
+          src="images/hobby-project1.png"
+          class="img-fluid rounded mt-5 mb-4"
+          id="hobby1.info"
+          alt="Hobby Project"
+        />
+        <h2>Hobby Project</h2>
+        <p class="text-muted">
+          <span class="description">
+            This website is a hobby project that focuses on UX Design. It provides information about UX design, its process, and its goal of creating meaningful user experiences. The website offers a free UX course to the first 50 sign-ups and includes a button to apply. It dynamically updates the heading based on the user's age. The website aims to educate visitors about UX design and encourage them to enroll in the course.
+          </span>
+        </p>
+        <a
+          href=""
+          target="_blank"
+          class="btn btn-branding-projects"
+          title="Netlify Project Page"
+          
+          >View Live</a
+        >
+        <a
+          href=""
+          target="_blank"
+          class="btn btn-branding-projects"
+          title="Github Profile"
+          >Github</a
+        >
+
+         <!-- Hobby 2 Project -->
+        <img
+          src="images/hobby-project2.png"
+          class="img-fluid rounded mt-5 mb-4"
+          alt="Weather Project"
+        />
+        <h2>Hobby Project</h2>
+        <p class="text-muted">
+          <span class="description">
             
-              <span class="description"
-                ></span
-              >
-            </p>
-            <a
-              href=""
-              target="_blank"
-              class="btn btn-branding-projects"
-              title="Netlify Project Page"
-              >View Live</a
-            >
-            <a
-              href=""
-              target="_blank"
-              class="btn btn-branding-projects"
-              title="GitHub Profile"
-              >Github</a
-            >
-          </div>
-          <div class="col-md-6">
-            <img
-              src=""
-              class="img-fluid rounded mt-5 mb-4"
-              alt="New project"
-            />
-            <h2>New project coming soon</h2>
-            <p class="text-muted">
-              <span class="description"
-                >description</span
-              >
-            </p>
-            <a
-              href=""
-              target="_blank"
-              class="btn btn-branding-projects"
-              title="Netlify Project Page"
-              >View Live</a
-            >
-            <a
-              href=""
-              target="_blank"
-              class="btn btn-branding-projects"
-              title="GitHub Profile"
-              >Github</a
-            >
-          </div>
-        </div>
+          </span>
+        </p>
+        <a
+          href=""
+          target="_blank"
+          class="btn btn-branding-projects"
+          title="Netlify Project Page"
+          >View Live</a
+        >
+        <a
+          href=""
+          target="_blank"
+          class="btn btn-branding-projects"
+          title="GitHub Profile"
+          >Github</a
+        >
+        
       </div>
     </div>
+
+      
+  
+    
     <footer>
-      <div
-        class="contact-box justify-content-between mt-5 mb-5 d-none d-lg-block"
-      >
+      <div class="contact-box justify-content-between mt-5 mb-5 d-none d-lg-block">
         <div class="row">
           <div class="col">
             <h3 class="contact-description">Work Inquiry</h3>
-            <p class="text-muted">Let's Connect</p>
+<p class="text-muted">Let's Connect</p>
           </div>
           <div class="col">
             <a
