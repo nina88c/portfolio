@@ -101,7 +101,7 @@ img:hover {
 }
 
 .btn-branding {
-  background: #FEE0E4;
+  background: var(--branding-color);
   border-radius: 4px;
   color: #222831;
   font-size: 18px;
@@ -206,6 +206,7 @@ img:hover {
   font-size: 20px;
 }
 
+
 @media (max-width: 900px) {
   h1 {
     font-size: 42px;
@@ -241,6 +242,9 @@ img:hover {
   nav a {
     font-size: 12px;
   }
+  .logo {
+ max-height: 40px;
+}
 
   .content h1 {
     font-size: 42px;
