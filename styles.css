@@ -209,6 +209,9 @@ img:hover {
 
 
 @media (max-width: 900px) {
+ body {
+  overflow-x: hidden;
+}
   h1 {
     font-size: 42px;
     line-height: 1.5;
