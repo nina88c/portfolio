@@ -1,0 +1,176 @@
+/* =========================================================
+   COLOURS & FONTS: change these once and the whole site updates
+   ========================================================= */
+:root {
+  --burgundy: #4d0019;        /* main dark background */
+  --burgundy-light: #6b1429;  /* cards on dark sections, hover states */
+  --cream: #f2efe9;           /* light background */
+  --brown: #7a3f12;           /* accent from your font palette image */
+  --white: #ffffff;
+  --text-dark: #2b0a12;       /* text on cream */
+
+  --font-heading: "Playfair Display", Georgia, serif;   /* classy serif */
+  --font-script: "Pinyon Script", cursive;              /* handwritten script */
+  --font-body: "Inter", Arial, sans-serif;              /* easy to read */
+
+  --max-width: 1080px;        /* how wide content gets on big screens */
+}
+
+/* =========================================================
+   BASICS
+   ========================================================= */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 70px; } /* smooth jump to sections */
+body {
+  font-family: var(--font-body);
+  line-height: 1.7;
+  color: var(--text-dark);
+  background: var(--cream);
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--brown); outline-offset: 3px; } /* keyboard focus */
+
+h1, h2, h3 { font-family: var(--font-heading); font-weight: 400; line-height: 1.2; }
+h2 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; }
+h3 { font-size: 1.25rem; }
+.script { font-family: var(--font-script); font-weight: 400; }   /* use on any element for script text */
+
+/* Centred content container used inside every section */
+.wrap { max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; }
+
+/* =========================================================
+   NAVIGATION BAR
+   ========================================================= */
+.nav {
+  position: sticky; top: 0; z-index: 10;          /* stays at top while scrolling */
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.9rem 1.5rem;
+  background: var(--burgundy); color: var(--cream);
+}
+.nav__logo { font-size: 2rem; text-decoration: none; line-height: 1; }
+.nav__links { display: flex; gap: 1.5rem; }
+.nav__links a {
+  text-decoration: none; font-size: 0.8rem;
+  letter-spacing: 0.1em; text-transform: uppercase;   /* remove text-transform for normal case */
+}
+.nav__links a:hover { text-decoration: underline; text-underline-offset: 6px; }
+
+/* =========================================================
+   BUTTONS (used in hero and contact)
+   ========================================================= */
+.btn {
+  display: inline-block; padding: 0.7rem 1.6rem;
+  border: 1px solid currentColor; border-radius: 999px;   /* pill shape */
+  text-decoration: none; font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s;
+}
+.btn:hover { background: var(--cream); color: var(--burgundy); }
+
+/* =========================================================
+   HERO: text on the left, photo on the right
+   ========================================================= */
+.hero {
+  display: grid; grid-template-columns: 1fr 1fr;
+  min-height: 80vh;
+  background: var(--burgundy); color: var(--cream);
+}
+.hero__text {
+  display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+  gap: 1.5rem; padding: 3rem 2rem 3rem max(1.5rem, calc((100vw - var(--max-width)) / 2));
+}
+.hero__title { font-size: clamp(2.4rem, 6vw, 4.2rem); }
+.hero__title .script {
+  display: block; font-size: 1.1em; margin-top: 0.2em;
+  color: var(--cream);
+}
+.hero__intro { max-width: 34ch; opacity: 0.9; }
+.hero__photo { background: var(--burgundy-light); }
+.hero__photo img { width: 100%; height: 100%; object-fit: cover; }
+/* If the photo file is missing, the broken image is hidden and the plain colour block shows */
+.is-empty img { display: none; }
+
+/* =========================================================
+   SECTIONS (shared spacing + colour variants)
+   ========================================================= */
+.section { padding: 5rem 0; }
+.section--cream { background: var(--cream); color: var(--text-dark); }
+.section--dark  { background: var(--burgundy); color: var(--cream); }
+.section__sub { margin-bottom: 2.5rem; opacity: 0.85; }
+.spaced { margin-top: 4rem; }
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+.about { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 3rem; align-items: center; }
+.about__text p { margin-bottom: 1rem; max-width: 62ch; }
+.about__text h3 { margin: 1.5rem 0 0.8rem; }
+
+/* Polaroid photo frame, tilted slightly */
+.polaroid {
+  background: var(--white); padding: 0.8rem 0.8rem 0.4rem;
+  transform: rotate(-3deg);                       /* change the angle or set to 0 */
+  box-shadow: 0 12px 30px rgba(77, 0, 25, 0.25);
+}
+.polaroid img, .polaroid.is-empty::before { aspect-ratio: 4 / 5; width: 100%; object-fit: cover; background: #ddd5cc; }
+.polaroid.is-empty::before { content: ""; display: block; }  /* grey placeholder if no photo */
+.polaroid figcaption { text-align: center; font-size: 2rem; color: var(--burgundy); padding-top: 0.3rem; }
+
+/* Skill "chips" (small pill tags), also used in projects */
+.chips { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.chips li {
+  padding: 0.25rem 0.9rem; font-size: 0.85rem;
+  border: 1px solid var(--burgundy); border-radius: 999px; color: var(--burgundy);
+}
+.chips--light li { border-color: var(--cream); color: var(--cream); }  /* chips on dark background */
+
+/* =========================================================
+   PROJECTS: cards in a responsive grid
+   ========================================================= */
+.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 2rem; }
+.project { background: var(--burgundy-light); display: flex; flex-direction: column; }
+.project__img { aspect-ratio: 16 / 10; background: #3a0012; }   /* placeholder colour behind screenshot */
+.project__img img { width: 100%; height: 100%; object-fit: cover; }
+.project__body { padding: 1.5rem; display: flex; flex-direction: column; gap: 0.9rem; flex: 1; }
+.project__links { display: flex; gap: 1.2rem; margin-top: auto; font-size: 0.9rem; }
+.project__links a { text-underline-offset: 5px; }
+.project__links a:hover { color: var(--white); }
+
+/* =========================================================
+   EXPERIENCE & EDUCATION
+   ========================================================= */
+.job { padding: 1.5rem 0; border-top: 1px solid rgba(77, 0, 25, 0.25); max-width: 780px; }
+.job__head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.3rem 1.5rem; margin-bottom: 0.5rem; }
+.job__date { color: var(--brown); font-size: 0.9rem; }   /* the brown accent colour */
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+.contact { text-align: center; }
+.contact .big { font-size: clamp(3rem, 9vw, 5.5rem); }
+.contact p { margin-bottom: 1.5rem; }
+.contact__links { display: flex; justify-content: center; gap: 1.5rem; margin-top: 1.5rem; }
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.footer { background: #370012; color: var(--cream); text-align: center; padding: 1.2rem; font-size: 0.85rem; }
+
+/* =========================================================
+   MOBILE / TABLET (screens narrower than 800px)
+   Layouts that sit side by side become stacked
+   ========================================================= */
+@media (max-width: 800px) {
+  .hero { grid-template-columns: 1fr; min-height: 0; }
+  .hero__text { padding: 3rem 1.5rem; }
+  .hero__photo { aspect-ratio: 4 / 3; order: -1; }   /* photo above text; delete this line to put it below */
+  .about { grid-template-columns: 1fr; }
+  .polaroid { max-width: 280px; margin: 0 auto; }
+  .section { padding: 3.5rem 0; }
+}
+
+/* Very small phones: tighter nav */
+@media (max-width: 520px) {
+  .nav__links { gap: 0.9rem; }
+  .nav__links a { font-size: 0.7rem; }
+}

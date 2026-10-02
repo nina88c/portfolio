@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Makes the site scale properly on phones and tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TAB TITLE + SEARCH ENGINE DESCRIPTION: change these -->
+  <title>Delina Carnaffin | Portfolio</title>
+  <meta name="description" content="Portfolio of Delina Carnaffin: front-end development and cyber security.">
+
+  <!-- FONTS (free Google Fonts, close to your Canva style) -->
+  <!-- Playfair Display = classy serif headings | Pinyon Script = handwritten script | Inter = easy-to-read body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- Links to your CSS file (keep both files in the same folder) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION BAR ============ -->
+  <!-- Each link jumps to the section with the matching id (e.g. href="#about" -> id="about") -->
+  <header class="nav">
+    <a class="nav__logo script" href="#home">Delina Carnaffin</a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO (first thing people see) ============ -->
+    <section class="hero" id="home">
+      <div class="hero__text">
+        <!-- Big heading: serif, with a script-font second line -->
+        <h1 class="hero__title">
+          Delina Carnaffin
+          <span class="script">Front-end &amp; Cyber Security</span>
+        </h1>
+        <!-- Short intro: CHANGE to your own words -->
+        <p class="hero__intro">I build clean, responsive websites and I'm growing my skills in cyber security. Here's a look at my work.</p>
+        <!-- Button links down to projects -->
+        <a class="btn" href="#projects">See my projects</a>
+      </div>
+      <!-- HERO PHOTO: replace the src with your image file name, e.g. images/me.jpg. Delete the whole <img> if you don't want one -->
+      <div class="hero__photo">
+        <img src="images.html/me-header.jpg" alt="Portrait of Delina" onerror="this.parentElement.classList.add('is-empty')">
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--cream" id="about">
+      <div class="wrap about">
+        <!-- Polaroid-style photo (swap the image in src) -->
+        <figure class="polaroid">
+          <img src="images.html/me-about.jpg" alt="Delina" onerror="this.parentElement.classList.add('is-empty')">
+          <figcaption class="script">I'm Delina</figcaption>
+        </figure>
+        <div class="about__text">
+          <h2>Well hello there,</h2>
+          <!-- Taken from your CV profile: edit freely -->
+          <p>I'm a motivated, adaptable professional with a foundation in front-end web development (HTML, CSS, JavaScript, React) and a Cyber Security Practices certificate.</p>
+          <p>Several years of customer-facing administrative work have taught me strong communication and problem solving. I learn new tools quickly and I'm looking to bring that, with a growing technical skill set, into an IT role.</p>
+
+          <!-- SKILLS: copy/paste a <li> to add more -->
+          <h3>Skills</h3>
+          <ul class="chips">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>API integration</li>
+            <li>Cyber security practices</li>
+            <li>ISO 27001 principles</li>
+            <li>Shopify</li>
+            <li>Gorgias</li>
+            <li>Microsoft Office</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <!-- Each project is one <article class="project">. Copy/paste a whole block to add another -->
+    <section class="section section--dark" id="projects">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <p class="section__sub">A selection of things I've built.</p>
+
+        <div class="projects">
+
+          <!-- PROJECT 1 (fill in) -->
+          <article class="project">
+            <!-- Screenshot: put your image in the images folder and update src -->
+            <div class="project__img"><img src="images/project1.jpg" alt="Screenshot of Project 1" onerror="this.parentElement.classList.add('is-empty')"></div>
+            <div class="project__body">
+              <h3>Project name</h3>
+              <p>Describe what it is, what problem it solves and what you learned.</p>
+              <!-- Tools used: copy/paste <li> to add more -->
+              <ul class="chips chips--light">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <!-- Links: replace # with real addresses -->
+              <div class="project__links">
+                <a href="#">Live site</a>
+                <a href="#">Code on GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 (fill in) -->
+          <article class="project">
+            <div class="project__img"><img src="images/project2.jpg" alt="Screenshot of Project 2" onerror="this.parentElement.classList.add('is-empty')"></div>
+            <div class="project__body">
+              <h3>Project name</h3>
+              <p>Describe what it is, what problem it solves and what you learned.</p>
+              <ul class="chips chips--light">
+                <li>JavaScript</li>
+                <li>React</li>
+              </ul>
+              <div class="project__links">
+                <a href="#">Live site</a>
+                <a href="#">Code on GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 (fill in, or delete this whole block) -->
+          <article class="project">
+            <div class="project__img"><img src="images/project3.jpg" alt="Screenshot of Project 3" onerror="this.parentElement.classList.add('is-empty')"></div>
+            <div class="project__body">
+              <h3>Project name</h3>
+              <p>Describe what it is, what problem it solves and what you learned.</p>
+              <ul class="chips chips--light">
+                <li>API</li>
+                <li>Bootstrap</li>
+              </ul>
+              <div class="project__links">
+                <a href="#">Live site</a>
+                <a href="#">Code on GitHub</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE (from your CV) ============ -->
+    <section class="section section--cream" id="experience">
+      <div class="wrap">
+        <h2>Experience</h2>
+
+        <!-- One job = one <div class="job">. Copy/paste to add more -->
+        <div class="job">
+          <div class="job__head">
+            <h3>Executive Assistant, Higham Place</h3>
+            <span class="job__date">January 2023 – Present</span>
+          </div>
+          <p>Executive-level administrative support for a private Suffolk estate with 4 luxury holiday-let cottages. I handle sensitive correspondence, maintain the estate website, manage fault reporting, record keeping and basic accounting, and coordinate maintenance teams.</p>
+        </div>
+
+        <div class="job">
+          <div class="job__head">
+            <h3>Customer Service Representative (Remote), Iconek Brands Ltd</h3>
+            <span class="job__date">October 2023 – January 2024</span>
+          </div>
+          <p>Remote support for a UK women's fashion ecommerce brand. I managed high volumes of email enquiries using Gorgias, and used Shopify to track shipments and coordinate with warehouse teams.</p>
+        </div>
+
+       
+
+        <!-- EDUCATION & CERTIFICATES -->
+        <h2 class="spaced">Education &amp; certificates</h2>
+        <div class="job">
+          <div class="job__head"><h3>NCFE Level 3 Cyber Security Practices</h3><span class="job__date">Whitehead Ross Education and Consulting</span></div>
+          <p>Threat landscapes, security protocols, risk management and safe data handling.</p>
+        </div>
+        <div class="job">
+          <div class="job__head"><h3>Front-End Development Certification</h3><span class="job__date">SheCodes</span></div>
+          <p>HTML, CSS, JavaScript, API integration, Bootstrap, SEO, responsive design and React.</p>
+        </div>
+        <div class="job">
+          <div class="job__head"><h3>TryHackMe (Premium)</h3><span class="job__date">Self-study, ongoing</span></div>
+          <p>Hands-on labs and challenges in networking, penetration testing and security fundamentals.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--dark contact" id="contact">
+      <div class="wrap">
+        <h2 class="script big">Let's work together!</h2>
+        <p>Open to IT roles. Get in touch.</p>
+        <!-- Opens the visitor's email app. Change the address here -->
+        <a class="btn" href="mailto:delinacarnaffin@gmail.com">delinacarnaffin@gmail.com</a>
+        <!-- Optional: add LinkedIn / GitHub links by copying a line below and changing the address -->
+       <p class="contact__links">
+  <a href="https://www.linkedin.com/in/delina-c-6b1465250/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+         
+            <a href="https://github.com/nina88c" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p>&copy; 2026 Delina Carnaffin</p>
+    <p>Designed and built by me with HTML, CSS and JavaScript</p>
+  </footer>
+
+</body>
+</html>
