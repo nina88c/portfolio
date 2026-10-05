@@ -182,8 +182,20 @@ h3 { font-size: 1.25rem; }
   .section { padding: 3.5rem 0; }
 }
 
-/* Very small phones: tighter nav */
-@media (max-width: 520px) {
-  .nav__links { gap: 0.9rem; }
-  .nav__links a { font-size: 0.7rem; }
+/* small Phones: logo on top, links underneath */
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+  }
+  .nav__logo { font-size: 1.7rem; }
+  .nav__links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem 1.1rem;
+  }
+  .nav__links a { font-size: 0.72rem; }
 }
+/*stops any stray element from causing sideways scrolling on phones:*/
+body { overflow-x: hidden; }
